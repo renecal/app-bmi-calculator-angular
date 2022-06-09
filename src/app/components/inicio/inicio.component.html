@@ -1,1 +1,63 @@
-<p>inicio works!</p>
+<div class="row">
+  <div class="col-12">
+    <h4 class="titulo">BMI CALCULATOR</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col-3 offset-3">
+    <div class="fondoItem">
+      <i class="fas fa-mars sexo"></i>
+      <p>Masculino</p>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="fondoItem">
+      <i class="fas fa-venus sexo"></i>
+      <p>Femenino</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6 offset-3">
+    <div class="fondoItem">
+        <p>Altura</p>
+        <div class="numero">{{ altura }}<span class="centimetro">cm</span></div>
+        <input type="range" class="form-range" id="customRange1"
+        [value] = "altura"
+        min="120"
+        max="220"
+        (input)="cambiarDatoAltura($event)">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-3 offset-3">
+    <div class="fondoItem">
+        <p>Peso</p>
+        <div class="numero">{{ peso }}</div>
+        <div>
+          <i class="fas fa-minus signo" (click)="peso = peso-1"></i>
+          <i class="fas fa-plus signo" (click)="peso = peso+1"></i>
+        </div>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="fondoItem">
+      <p>Edad</p>
+      <div class="numero">{{ edad }}</div>
+      <div>
+        <i class="fas fa-minus signo"
+        (click)="edad = edad-1"></i>
+        <i class="fas fa-plus signo"
+        (click)="edad = edad+1"></i>
+      </div>
+  </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6 offset-3">
+    <div class="d-grid gap-2">
+      <button class="btn btn-primary btn-green btn-lg" type="button">CALCULAR</button>
+    </div>
+  </div>
+</div>

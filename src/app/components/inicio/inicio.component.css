@@ -1,0 +1,73 @@
+.fondoItem{
+  background-color: #E7E247;
+  height: 130px;
+  border-radius: 20px;
+  box-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.188)!important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.fondoItem:hover{
+  background-color: #068D9D;
+  box-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.105)!important;
+  color:white;
+}
+
+.btn-green{
+  background-color: #08A045;
+  border-color: #08A045;
+  border-radius: 20px;
+  font-weight: 800;
+
+  box-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.188)!important;
+}
+.btn-green:hover{
+  background-color: #0dba52;
+  border-color: #0dba52;
+
+  box-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.105)!important;
+}
+
+.sexo{
+  font-size: 2.5rem;
+}
+
+
+.numero{
+  font-size: 36px;
+  font-weight: 800;
+  margin-top: -30px;
+}
+
+.centimetro{
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+.form-range{
+  padding: 0px 20px;
+}
+
+input[type=range]::-webkit-slider-thumb{
+  background-color: #41129eff;
+}
+
+.signo{
+  cursor: pointer;
+  color: white;
+  border-radius: 15px;
+  background: #08A045;
+  padding: 7px;
+  margin-left: 3px;
+}
+
+.signo:hover{
+  cursor: pointer;
+  color: white;
+  border-radius: 15px;
+  background: #D81159;
+  padding: 7px;
+  margin-left: 3px;
+}
