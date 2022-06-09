@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
@@ -8,17 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class InicioComponent implements OnInit {
 
   edad = 25;
-  peso = 61;
+  peso = 71;
   altura = 170;
   sexo = 'masculino';
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
 
   cambiarDatoAltura(event: any){
-    console.log(event.target.value)
+    this.altura = event.target.value
   }
 
   masculino(){
@@ -27,6 +28,13 @@ export class InicioComponent implements OnInit {
 
   femenino(){
     this.sexo = 'femenino';
+  }
+
+  calcularBMI(){
+    // algunos calculos
+    const BMI = this.peso / Math.pow(this.altura/100, 2);
+    console.log(BMI.toFixed(1)); // redondear a 1 valor despuies de la coma
+    this.router.navigate(['/resultado', BMI.toFixed(1)]);
   }
 
 }
