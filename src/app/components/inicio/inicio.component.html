@@ -5,13 +5,13 @@
 </div>
 <div class="row">
   <div class="col-3 offset-3">
-    <div class="fondoItem">
+    <div class="fondoItem cursor" (click)="masculino()" [ngClass]="sexo === 'masculino' ? 'sexoSeleccionado' : 'sexoDesactivo'">
       <i class="fas fa-mars sexo"></i>
       <p>Masculino</p>
     </div>
   </div>
   <div class="col-3">
-    <div class="fondoItem">
+    <div class="fondoItem cursor" (click)="femenino()" [ngClass]="sexo === 'femenino' ? 'sexoSeleccionado' : 'sexoDesactivo'">
       <i class="fas fa-venus sexo"></i>
       <p>Femenino</p>
     </div>

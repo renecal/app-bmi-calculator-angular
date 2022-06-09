@@ -9,9 +9,9 @@
   align-items: center;
 }
 .fondoItem:hover{
-  background-color: #068D9D;
+  background-color: white;
   box-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.105)!important;
-  color:white;
+  color:inherit;
 }
 
 .btn-green{
@@ -71,3 +71,16 @@ input[type=range]::-webkit-slider-thumb{
   padding: 7px;
   margin-left: 3px;
 }
+
+.cursor{
+  cursor: pointer;
+}
+.sexoDesactivo{
+  background-color:#7E7B10 ;
+}
+
+.sexoSeleccionado{
+  background-color: white ;
+}
+
+
